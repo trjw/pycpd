@@ -5,7 +5,7 @@ from pycpd import affine_registration
 import numpy as np
 import time
 
-def visualize(iteration, error, X, Y, ax):
+def visualize(iteration, error, X, Y, ax, reg):
     plt.cla()
     ax.scatter(X[:,0],  X[:,1], X[:,2], color='red', label='Target')
     ax.scatter(Y[:,0],  Y[:,1], Y[:,2], color='blue', label='Source')

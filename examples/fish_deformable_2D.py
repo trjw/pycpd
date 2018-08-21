@@ -4,7 +4,7 @@ from pycpd import deformable_registration
 import numpy as np
 import time
 
-def visualize(iteration, error, X, Y, ax):
+def visualize(iteration, error, X, Y, ax, reg):
     plt.cla()
     ax.scatter(X[:,0] ,  X[:,1], color='red', label='Target')
     ax.scatter(Y[:,0] ,  Y[:,1], color='blue', label='Source')
